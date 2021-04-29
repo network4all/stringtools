@@ -93,7 +93,7 @@ func Between (mydata string, after string, before string) string {
     return AfterDelimiter(BeforeDelimiter(mydata, before), after)
 }
 
-func StripCtlAndExtFromBytes(str string) string {
+func StripSpecialCharacters(str string) string {
         b := make([]byte, len(str))
         var bl int
         for i := 0; i < len(str); i++ {
